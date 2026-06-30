@@ -1,9 +1,9 @@
 let homeEl = document.getElementById("home")
-let guestEl = document.getElementById("guest")
+let AwayEl = document.getElementById("Away")
 
 
 let homePoints = 0;
-let guestPoints = 0;
+let AwayPoints = 0;
 
 function increaseHomeScoreOne(){
     homePoints += 1
@@ -20,22 +20,24 @@ function increaseHomeScoreThree(){
     homeEl.textContent = homePoints
 }
 
-function increaseGuestScoreOne(){
-    guestPoints += 1
-    guestEl.textContent = guestPoints
+function increaseAwayScoreOne(){
+    AwayPoints += 1
+    AwayEl.textContent = AwayPoints
 }
 
-function increaseGuestScoreTwo(){
-    guestPoints += 2
-    guestEl.textContent = guestPoints
+function increaseAwayScoreTwo(){
+    AwayPoints += 2
+    AwayEl.textContent = AwayPoints
 }
 
-function increaseGuestScoreThree(){
-    guestPoints += 3
-    guestEl.textContent = guestPoints
+function increaseAwayScoreThree(){
+    AwayPoints += 3
+    AwayEl.textContent = AwayPoints
 }
 
 function reset(){
-    guestEl.textContent = 0
+    homePoints = 0;
+    AwayPoints = 0;
+    AwayEl.textContent = 0
     homeEl.textContent = 0
 }
